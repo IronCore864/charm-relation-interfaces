@@ -7,4 +7,6 @@ providers:
   - name: tempo-k8s
     url: https://github.com/IronCore864/tempo-k8s-operator
 
-requirers: []
+requirers:
+  - name: tempo-k8s
+    url: https://github.com/IronCore864/tempo-k8s-operator

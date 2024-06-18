@@ -30,4 +30,6 @@ providers:
 
 # `requirers` list charms that implement the requiring side of the interface.
 # this follows the same structure as `providers`. 
-requirers: []
+requirers:
+  - name: k8s-charm-example  # same as metadata.yaml's .name
+    url: https://github.com/IronCore864/k8s-charm-example

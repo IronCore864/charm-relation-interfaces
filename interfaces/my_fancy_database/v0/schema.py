@@ -32,7 +32,7 @@ class ProviderSchema(DataBagSchema):
 
 
 class RequirerAppData(BaseModel):
-    tables: typing.List[str] = Field(
+    tables: typing.Json[typing.List[str]] = Field(
         description="Tables that the requirer application needs.",
         title="Requested tables.",
         examples=[["users", "passwords"]],

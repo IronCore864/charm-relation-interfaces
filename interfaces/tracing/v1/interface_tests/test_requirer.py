@@ -11,13 +11,13 @@ def test_data_on_created():
     tester.assert_schema_valid()
 
 
-# def test_data_on_joined():
-#     tester = Tester()
-#     tester.run('tracing-relation-joined')
-#     tester.assert_schema_valid()
+def test_data_on_joined():
+    tester = Tester()
+    tester.run("tracing-relation-joined")
+    tester.assert_schema_valid()
 
 
-# def test_data_on_changed():
-#     tester = Tester()
-#     tester.run('tracing-relation-changed')
-#     tester.assert_schema_valid()
+def test_data_on_changed():
+    tester = Tester()
+    tester.run("tracing-relation-changed")
+    tester.assert_schema_valid()

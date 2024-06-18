@@ -6,7 +6,7 @@ It must expose two interfaces.schema_base.DataBagSchema subclasses called:
 """
 
 from interface_tester.schema_base import DataBagSchema
-from pydantic import BaseModel, AnyHttpUrl, Field
+from pydantic import BaseModel, AnyHttpUrl, Field, Json
 import typing
 
 
@@ -32,7 +32,7 @@ class ProviderSchema(DataBagSchema):
 
 
 class RequirerAppData(BaseModel):
-    tables: typing.Json[typing.List[str]] = Field(
+    tables: Json[typing.List[str]] = Field(
         description="Tables that the requirer application needs.",
         title="Requested tables.",
         examples=[["users", "passwords"]],
